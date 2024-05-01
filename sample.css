@@ -1,0 +1,149 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif; 
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graydiv{
+    background-color:#ececec;
+    height: 95%;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+}
+
+/* styling for sidebar */
+
+.sidebar{
+    background-color: navy;
+    height: 100%;
+    width: 20%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+
+    .top{
+        display: flex;
+        flex-direction: column;
+
+        >img {
+
+            object-fit: contain;
+            height: 60%;
+            width: 60%;
+            clip-path: circle();
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15%;
+            
+        }
+        >span
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            >p{
+                color: white;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .bottom
+        {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            margin-bottom: 10%;
+            >span{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                >p{
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+        }
+}
+
+/* styling for middle div */
+
+.middle{
+    background-color: white;   
+    height: 90%;
+    width: 52%;
+    display: flex; 
+    margin: 2.5%;
+    border-radius: 15px;
+}
+/* styling for files div */
+.files{
+
+    background-color: white;   
+    height: 90%;
+    width: 28%;    
+    margin: 2.5%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .addnewfiles{
+        height: 40%;
+        width: 90%;
+        background-color: #ececec;
+        margin: 5%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >p{
+            margin-top: 30px;
+        }
+
+        >i{
+            margin-top: 20px;
+        }
+    }
+
+    .storage{
+        height: 10%;
+        width: 90%;
+        background-color: #ececec;
+        border-radius: 15px;
+        >p{
+            margin-left: 10px;
+        }
+    }
+
+    .sharedfolders{
+
+        height: 40%;
+        width: 90%;
+        background-color: #ececec;
+        margin: 5%;
+        border-radius: 15px;
+    }
+
+}
